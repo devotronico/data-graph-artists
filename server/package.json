@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "test": "nyc mocha --exit",
+    "coverage": "mkdir coverage && nyc report --reporter=text-lcov > coverage/coverage.lcov"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-sslify": "^1.2.0",
+    "http-errors": "~1.6.3",
+    "mocha": "^7.1.2",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.1",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "nyc": "^15.1.0",
+    "redis-mock": "^0.49.0"
+  },
+  "engines": {
+    "node": "12.16.3"
+  }
+}
